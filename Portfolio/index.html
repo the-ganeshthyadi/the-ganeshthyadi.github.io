@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow: hidden;
+        }
+        .block {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .block {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+}
+
+        .block .cat {
+            position: absolute;
+            top: 29.5%;
+            left: 18.5%;
+            font-size: 1.5em;
+            color: rgb(236, 235, 235);
+            text-align: left;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .block .cat {
+            display: none;
+            position: absolute;
+            top: 29.5%;
+            left: 18.5%;
+            font-size: 1.5em;
+            color: rgb(236, 235, 235);
+            text-align: left;
+        }
+}
+        
+        .block .title {
+            position: absolute;
+            top: 30%;
+            left: 18%;
+            font-size: 8em;
+            color: white;
+            text-align: left;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .block .title {
+            display: none;
+            position: absolute;
+            top: 30%;
+            left: 18%;
+            font-size: 8em;
+            color: white;
+            text-align: left;
+        }
+}
+
+
+        .block .description {
+            position: absolute;
+            top: 53%;
+            left: 18.5%;
+            color: white;
+            text-align: left;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .block .description {
+            display: none;
+            position: absolute;
+            top: 53%;
+            left: 18.5%;
+            color: white;
+            text-align: left;
+        }
+}
+
+        .block .button {
+            position: absolute;
+            top: 70%;
+            left: 18.5%;
+            background-color: #FFF;
+            padding: 8px 16px;
+            border: none;
+            display: inline-block;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .button:hover{
+            background-color: rgb(239, 239, 239);
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+}
+
+        /* Adjusted dot styles */
+        .dots {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 9999; /* Increase the z-index to ensure dots are on top */
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #ffffff6e;
+            border-radius: 50%;
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .active {
+            background-color: #ffffff;
+        }
+/* 
+        @media only screen and (max-width: 600px) {
+
+        } */
+
+    </style>
+</head>
+<body>
+
+    <div class="dots">
+        <span class="dot" onclick="scrollToBlock(0)"></span>
+        <span class="dot" onclick="scrollToBlock(1)"></span>
+        <span class="dot" onclick="scrollToBlock(2)"></span>
+        <span class="dot" onclick="scrollToBlock(3)"></span>
+        <span class="dot" onclick="scrollToBlock(4)"></span>
+        <span class="dot" onclick="scrollToBlock(5)"></span>
+    </div>
+
+    <div class="block" style="background-color: #d4d4d4;" onwheel="scrollHandler(event)">
+        
+    </div>
+
+    <div class="block" style="background-color: rgb(150, 150, 150);" onwheel="scrollHandler(event)">
+        <div class="cat">Social Media Dashboard</div>
+        <div class="title">Datafluence</div>
+        <div class="description">
+
+            This project offers a social media dashboard for real-time analysis and monitoring.<br>
+            It helps manage content and tracks follower engagement while also providing insights<br>
+            on competitors. Users can easily view and understand their social media performance<br>
+            for better decision-making.!</div>
+        <!-- This is an example of a button/link to view a project -->
+        <a href="Projects\project1.html" class="button">View Project</a>
+
+    </div>
+
+    <div class="block" style="background-color: rgb(124, 124, 124);" onwheel="scrollHandler(event)">
+        <div class="cat">E-Commerce </div>
+        <div class="title">Market</div>
+        <div class="description">
+            This section features my big project—an online store like Amazon but with a dashboard.<br>
+            It's my way of showing how I create complex websites with extra features. This project<br>
+            demonstrates my skills in web design and making user-friendly interfaces. It's proof<br>
+            of my dedication to building websites that work well and look good.</div>
+        <a href="Projects\project2.html" class="button">View Project</a>
+    </div>
+
+    <div class="block" style="background-color: rgb(104, 104, 104);" onwheel="scrollHandler(event)">
+        <div class="cat">Personal Assistant (Chatbot)</div>
+        <div class="title">Assistify</div>
+        <div class="description">
+            Asstify: Your helpful virtual assistant using smart AI technology to assist with tasks<br>
+             and provide tailored support. Easy-to-use and friendly, Asstify simplifies interactions<br>
+              by offering information, suggestions, and quick solutions for an enjoyable user experience.</div>
+        <a href="Projects\project3.html" class="button">View Project</a>
+    </div>
+
+    <div class="block" style="background-color: #474747;" onwheel="scrollHandler(event)">
+        <div class="cat">Collection Of Mini Projects</div>
+        <div class="title">Mini Projects</div>
+        <div class="description">
+            This section holds a compilation of my mini-projects in C, Java, and Python.<br>
+            These projects exhibit my practical skills in coding and problem-solving. Each project<br>
+            reflects my hands-on experience and application of programming concepts, showcasing<br>
+            my ability to create practical solutions using these languages.</div>
+        <a href="Projects\project4.html" class="button">View Project</a>
+    </div>
+
+    <div class="block" style="background-color: rgb(39, 39, 39);" onwheel="scrollHandler(event)">
+        <div class="cat">Collection Of Certificates</div>
+        <div class="title">Accomplishments</div>
+        <div class="description">
+            This section is a compilation of my achievements from diverse courses and certifications.<br>
+            It includes certifications from various websites, focusing on languages such as Python,<br>
+            Java, and more.These certifications signify my proficiency and dedication in mastering<br>
+            different programming languages and reflect my commitment to continuous learning <br>
+            and skill development in the tech domain</div>
+        <a href="Projects\project5.html" class="button">View Project</a>
+    </div>
+
+    <script>
+        function scrollHandler(event) {
+            let currentY;
+
+            if (event.type === 'wheel') {
+                currentY = event.deltaY;
+            } else if (event.type === 'touchmove') {
+                currentY = event.touches[0].clientY;
+            }
+
+            const deltaThreshold = 50; // Adjust this threshold as needed
+
+            if (Math.abs(currentY) >= deltaThreshold) {
+                const delta = currentY > 0 ? -1 : 1;
+                const blocks = document.querySelectorAll('.block');
+                const currentBlock = Math.round(window.scrollY / window.innerHeight);
+                const nextBlock = currentBlock + delta;
+                const blockCount = blocks.length;
+
+                if (nextBlock >= 0 && nextBlock < blockCount) {
+                    event.preventDefault();
+                    blocks[nextBlock].scrollIntoView({ behavior: 'smooth' });
+                    setActiveDot(nextBlock);
+                }
+            }
+        }
+
+        function setActiveDot(index) {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function scrollToBlock(index) {
+            const blocks = document.querySelectorAll('.block');
+            blocks[index].scrollIntoView({ behavior: 'smooth' });
+            setActiveDot(index);
+        }
+    </script>
+
+
+</body>
+</html>
