@@ -119,7 +119,7 @@
         .box .date {
             color: #8F8F8F;
             margin-left: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .open-project-button {
@@ -137,48 +137,92 @@
         }
 
 
+        .menu {
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            margin-top: 30px;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid #000000; */
+            /* background-color: #1B1B1B; */
+            transform: translateY(-50%);
+            z-index: 9999; 
+        }
+        .menuitems {
+            height: 20%;
+            width: 60px;
+            /* background-color: #1B1B1B; */
+            border-radius: 0;
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 10px;
+            font-size: 15px;
+            color: #FFF;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .menuitems:hover{
+            background-color: #4CAF50;
+            border-radius: 8px;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="title1">Accomplishments</div>
+    <div class = "menu">
+        <a style="text-decoration: none;" class="menuitems" href="https://the-ganeshthyadi.github.io/"> Home </a>
+        <a style="text-decoration: none;" class="menuitems" href=""> Profile </a>
+        <div class="menuitems" onclick="">Resume</div>
+
+    </div>
+    <div style="margin-top: 30px;" class="title1">Accomplishments</div>
+    
 
 
+    <div style="border: 1px solid #000000; padding: 30px;  background-color: #333; border-radius: 8px; align-items: center;" >
 
-    <div style="border: 1px solid #000000; padding: 30px;  background-color: #333; border-radius: 8px; align-items: center;" class="row">
-        
-        <div class="box">
-            <img src="Res\sql.png" alt="Image 1">
-            <div class="titleopen">
-                <div class="title">SQL (Basic)</div>
-                <div class="date">HackerRank</div>
-                <a href="https://www.hackerrank.com/certificates/e6f97d8518b1" class="open-project-button">View</a>
-            </div>
+            <p style="width: 100%; font-size: 20px; font-weight: bold; color: #FFF;">Problem Solving</p>
+
+            <div class="row">
+                <div class="box">
+                    <img src="Res\HackerRank.png" alt="Image 1">
+                    <div class="titleopen">
+                        <div class="title">HackerRank</div>
+                        <div class="date">Solved: </div>
+                        <a href="https://www.hackerrank.com/certificates/e6f97d8518b1" class="open-project-button">View</a>
+                    </div>
+                </div>
+
+                
+                <div class="box">
+                    <img src="Res\LeetCode_logo_black.png" alt="Image 1">
+                    <div class="titleopen">
+                        <div class="title">LeetCode</div>
+                        <div class="date">Solved: </div>
+                        <a href="https://www.hackerrank.com/certificates/5b190d9610f5" class="open-project-button">View</a>
+                    </div>
+                </div>
+
+                
+                <div class="box">
+                    <img src="Res\CodingNinjas.png" alt="Image 1">
+                    <div class="titleopen">
+                        <div class="title">Coding Ninjas</div>
+                        <div class="date">Solved: </div>
+                        <a href="https://www.hackerrank.com/certificates/86f0a2069e94" class="open-project-button">View</a>
+                    </div>
+                </div>
         </div>
-
-        
-        <div class="box">
-            <img src="Res\sql.png" alt="Image 1">
-            <div class="titleopen">
-                <div class="title">SQL (Intermediate)</div>
-                <div class="date">HackerRank</div>
-                <a href="https://www.hackerrank.com/certificates/5b190d9610f5" class="open-project-button">View</a>
-            </div>
-        </div>
-
-        
-        <div class="box">
-            <img src="Res\sql.png" alt="Image 1">
-            <div class="titleopen">
-                <div class="title">SQL(Advanced)</div>
-                <div class="date">HackerRank</div>
-                <a href="https://www.hackerrank.com/certificates/86f0a2069e94" class="open-project-button">View</a>
-            </div>
-        </div>
-        
-        
     </div>
 
+    <p style="width: 100%; font-size: 20px; font-weight: bold; color: #FFF; margin-left: 5px; margin-top: 30px;margin-bottom: 30px;">Certificates</p>
 
     <div class="row">
         
